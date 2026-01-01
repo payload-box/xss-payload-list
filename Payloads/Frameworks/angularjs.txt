@@ -1,0 +1,11 @@
+{{constructor.constructor('alert(1)')()}}
+{{$on.constructor('alert(1)')()}}
+<div ng-app ng-csp>{{x=1;x.toString.constructor('alert(1)')()}}</div>
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
+<input ng-focus=$event.view.alert(1)>
+<div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}</div>
+<div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0></div><div ng-repeat="a in [1]" ng-bind="x.view.alert(1)"></div></div>
+{{ literal }}
+<html ng-app>
+{{ 1+1 }}
+</html>

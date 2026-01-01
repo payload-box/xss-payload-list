@@ -1,0 +1,9 @@
+{/* React renders HTML by default, but dangerous patterns exist */}
+<div dangerouslySetInnerHTML={{__html: '<img src=x onerror=alert(1)>'}} />
+<a href="javascript:alert(1)">Click me</a>
+{/* if user controls href */}
+<a href={userInput}>link</a>
+{/* if user controls props spread */}
+<div {...userProps} />
+{/* Server Side Rendering (SSR) injection */}
+<script>window.__PRELOADED_STATE__ = ${JSON.stringify(userObject)}</script>
