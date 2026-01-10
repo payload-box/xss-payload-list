@@ -10,6 +10,8 @@ This project aims to provide a comprehensive resource for understanding and test
 
 **Goal:** To explain XSS vulnerabilities from the OWASP Top 10 lists and provide a beneficial study for the security world.
 
+<img src="https://github.com/payload-box/xss-payload-list/blob/main/Docs/xss-payload-list-ismailtasdelen.jpeg">
+
 ## 📂 Project Structure
 
 - **`Payloads/`**: A vast collection of XSS payloads categorized by type and use case.
